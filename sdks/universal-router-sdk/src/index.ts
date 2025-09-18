@@ -10,6 +10,7 @@ export {
   ROUTER_AS_RECIPIENT,
   WETH_ADDRESS,
   UniversalRouterVersion,
+  RESOLVE_PERMIT2_ADDRESS,
 } from './utils/constants'
 export { CommandParser, GenericCommandParser } from './utils/commandParser'
 export type { UniversalRouterCommand, UniversalRouterCall, Param, CommandsDefinition } from './utils/commandParser'
