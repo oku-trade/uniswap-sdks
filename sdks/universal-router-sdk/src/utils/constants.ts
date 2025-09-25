@@ -32,7 +32,7 @@ const WETH_NOT_SUPPORTED_ON_CHAIN = '0x0000000000000000000000000000000000000000'
 // Todo: Change `CHAIN_CONFIGS` to pull the UR address with v4
 export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
   // mainnet
-  [1]: {
+  1: {
     weth: '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
@@ -46,7 +46,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     },
   },
   // goerli
-  [5]: {
+  5: {
     weth: '0xb4fbf271143f4fbf7b91a5ded31805e42b2208d6',
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
@@ -60,7 +60,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     },
   },
   // sepolia
-  [11155111]: {
+  11155111: {
     weth: '0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14',
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
@@ -74,7 +74,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     },
   },
   // polygon
-  [137]: {
+  137: {
     weth: '0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270',
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
@@ -88,7 +88,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     },
   },
   //polygon mumbai
-  [80001]: {
+  80001: {
     weth: '0x9c3C9283D3e44854697Cd22D3Faa240Cfb032889',
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
@@ -102,7 +102,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     },
   },
   //optimism
-  [10]: {
+  10: {
     weth: '0x4200000000000000000000000000000000000006',
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
@@ -116,7 +116,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     },
   },
   // optimism goerli
-  [420]: {
+  420: {
     weth: '0x4200000000000000000000000000000000000006',
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
@@ -130,7 +130,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     },
   },
   // arbitrum
-  [42161]: {
+  42161: {
     weth: '0x82aF49447D8a07e3bd95BD0d56f35241523fBab1',
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
@@ -144,7 +144,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     },
   },
   // arbitrum goerli
-  [421613]: {
+  421613: {
     weth: '0xe39Ab88f8A4777030A534146A9Ca3B52bd5D43A3',
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
@@ -158,7 +158,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     },
   },
   // celo
-  [42220]: {
+  42220: {
     weth: WETH_NOT_SUPPORTED_ON_CHAIN,
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
@@ -172,7 +172,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     },
   },
   // celo alfajores
-  [44787]: {
+  44787: {
     weth: WETH_NOT_SUPPORTED_ON_CHAIN,
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
@@ -186,7 +186,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     },
   },
   // binance smart chain
-  [56]: {
+  56: {
     weth: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
@@ -200,7 +200,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     },
   },
   // avalanche
-  [43114]: {
+  43114: {
     weth: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
@@ -214,7 +214,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     },
   },
   // base goerli
-  [84531]: {
+  84531: {
     weth: '0x4200000000000000000000000000000000000006',
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
@@ -228,7 +228,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     },
   },
   // base mainnet
-  [8453]: {
+  8453: {
     weth: '0x4200000000000000000000000000000000000006',
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
@@ -242,7 +242,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     },
   },
   // blast
-  [81457]: {
+  81457: {
     weth: '0x4300000000000000000000000000000000000004',
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
@@ -256,7 +256,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     },
   },
   // zora
-  [7777777]: {
+  7777777: {
     weth: '0x4200000000000000000000000000000000000006',
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
@@ -269,7 +269,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
       },
     },
   },
-  [324]: {
+  324: {
     weth: '0x5aea5775959fbc2557cc8789bc1bf90a239d9a91',
     permit2: '0x0000000000225e31d15943971f47ad3022f714fa',
     routerConfigs: {
@@ -284,7 +284,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     },
   },
   // worldchain
-  [480]: {
+  480: {
     weth: '0x4200000000000000000000000000000000000006',
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
@@ -297,7 +297,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
       },
     },
   },
-  [1301]: {
+  1301: {
     weth: '0x4200000000000000000000000000000000000006',
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
@@ -311,7 +311,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     },
   },
   // unichain mainnet
-  [130]: {
+  130: {
     weth: '0x4200000000000000000000000000000000000006',
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
@@ -324,7 +324,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
       },
     },
   },
-  [10143]: {
+  10143: {
     weth: '0x760AfE86e5de5fa0Ee542fc7B7B713e1c5425701',
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
@@ -337,7 +337,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
       },
     },
   },
-  [84532]: {
+  84532: {
     weth: '0x4200000000000000000000000000000000000006',
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
@@ -350,7 +350,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
       },
     },
   },
-  [1868]: {
+  1868: {
     weth: '0x4200000000000000000000000000000000000006',
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
@@ -364,7 +364,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     },
   },
   //moonbeam
-  [1284]: {
+  1284: {
     weth: '0x30d2a9f5fdf90ace8c17952cbb4ee48a55d916a7',
     permit2: '0xe96e30e92e01dc8a880f701b2d2160f93da18df7',
     routerConfigs: {
@@ -379,7 +379,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     },
   },
   // boba
-  [288]: {
+  288: {
     weth: '0xdeaddeaddeaddeaddeaddeaddeaddeaddead0000',
     permit2: '0xF80c91442D3EF66632958C0d395667075FC82fB0',
     routerConfigs: {
@@ -394,7 +394,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     },
   },
   //lens
-  [232]: {
+  232: {
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
         address: '0xAA904d497e42608C014BE83a026E984aFc16129b',
@@ -409,7 +409,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     permit2: '0x0000000000225e31d15943971f47ad3022f714fa',
   },
   //xlayer
-  [196]: {
+  196: {
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
         address: '0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc',
@@ -423,7 +423,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     weth: '0xe538905cf8410324e03a5a23c1c177a474d59b2b',
   },
   //gnosis
-  [100]: {
+  100: {
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
         address: '0x75FC67473A91335B5b8F8821277262a13B38c9b3',
@@ -437,7 +437,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     weth: '0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d',
   },
   //bob
-  [60808]: {
+  60808: {
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
         address: '0x346239972d1fa486FC4a521031BC81bFB7D6e8a4',
@@ -452,7 +452,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     permit2: '0xCbe9Be2C87b24b063A21369b6AB0Aa9f149c598F',
   },
   //lisk
-  [1135]: {
+  1135: {
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
         address: '0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8',
@@ -467,7 +467,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     permit2: '0xB952578f3520EE8Ea45b7914994dcf4702cEe578',
   },
   //zklink
-  [810180]: {
+  810180: {
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
         address: '0x2274bDE50218DDB955e7f60e4f2344e3Bff9D193',
@@ -482,7 +482,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     permit2: '0xc9fd50fc93f2a82d07d2b8c09ebe904317d5f7f6',
   },
   //taiko
-  [167000]: {
+  167000: {
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
         address: '0x346239972d1fa486FC4a521031BC81bFB7D6e8a4',
@@ -497,7 +497,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     permit2: '0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc',
   },
   // sei
-  [1329]: {
+  1329: {
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
         address: '0xa683c66045ad16abb1bCE5ad46A64d95f9A25785',
@@ -512,7 +512,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     permit2: '0xB952578f3520EE8Ea45b7914994dcf4702cEe578',
   },
   //mantle
-  [5000]: {
+  5000: {
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
         address: '0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8',
@@ -527,7 +527,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     permit2: '0x5d6b0f5335ec95cD2aB7E52f2A0750dd86502435',
   },
   //sei testnet
-  [713715]: {
+  713715: {
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
         address: '0x61a27a55f72bbCba64554246BCE2da43C164543B',
@@ -542,7 +542,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     permit2: '0x0C88d2842Bf80B7728486D5a02F6BC222d50d45B',
   },
   //linea
-  [59144]: {
+  59144: {
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
         address: '0xd7c7d7f18dd5388d5217c9696c7e799fcd75c6bd',
@@ -556,7 +556,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     weth: '0xe5d7c2a44ffddf6b295a15c148167daaaf5cf34f',
   },
   //polygon zkevm
-  [1101]: {
+  1101: {
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
         address: '0x32454e81d065FAA95Ec0d0Ab6Fe326599Af30fd7',
@@ -571,7 +571,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     permit2: '0xCEc9e219281B78E1946b6b894f75ae89Bc10FEb6',
   },
   //scroll
-  [534352]: {
+  534352: {
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
         address: '0x595E7160858b1AdA94Bda790D8699C85e595117E',
@@ -586,7 +586,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     permit2: '0xD75ca8A1F18DB1f48e500269111071308cFe718A',
   },
   //manta
-  [169]: {
+  169: {
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
         address: '0x42Bff1f6b647462fcD8c28a488Be9C9988830ef6',
@@ -601,7 +601,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     permit2: '0x83986Ff655A54ee061F6B7F476B92f4Fed111B93',
   },
   //rootstock
-  [30]: {
+  30: {
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
         address: '0x244f68e77357f86a8522323eBF80b5FC2F814d3E',
@@ -616,7 +616,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     permit2: '0xFcf5986450E4A014fFE7ad4Ae24921B589D039b5',
   },
   //filecoin
-  [314]: {
+  314: {
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
         address: '0x83702C6356A1028A900F83d446D189a31646a16b',
@@ -631,7 +631,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     permit2: '0xb81363578d377F8DA3902e9e705FD60198a9cEc2',
   },
   //corn
-  [21000000]: {
+  21000000: {
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
         address: '0x9db70E29712Cc8Af10c2B597BaDA6784544FF407',
@@ -646,7 +646,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     permit2: '0xB952578f3520EE8Ea45b7914994dcf4702cEe578',
   },
   //etherlink
-  [42793]: {
+  42793: {
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
         address: '0x9db70E29712Cc8Af10c2B597BaDA6784544FF407',
@@ -661,7 +661,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     permit2: '0xB952578f3520EE8Ea45b7914994dcf4702cEe578',
   },
   //metal
-  [1750]: {
+  1750: {
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
         address: '0x346239972d1fa486FC4a521031BC81bFB7D6e8a4',
@@ -676,7 +676,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     permit2: '0xB952578f3520EE8Ea45b7914994dcf4702cEe578',
   },
   //sonic
-  [146]: {
+  146: {
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
         address: '0x738fD6d10bCc05c230388B4027CAd37f82fe2AF2',
@@ -689,7 +689,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     },
     weth: '0x039e2fB66102314Ce7b64Ce5Ce3E5183bc94aD38',
   },
-  [50]: {
+  50: {
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
         address: '0x738fD6d10bCc05c230388B4027CAd37f82fe2AF2',
@@ -704,7 +704,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     permit2: '0xB952578f3520EE8Ea45b7914994dcf4702cEe578',
   },
   //telos
-  [40]: {
+  40: {
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
         address: '0x738fD6d10bCc05c230388B4027CAd37f82fe2AF2',
@@ -719,7 +719,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     permit2: '0xB952578f3520EE8Ea45b7914994dcf4702cEe578',
   },
   //hemi
-  [43111]: {
+  43111: {
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
         address: '0x533c7A53389e0538AB6aE1D7798D6C1213eAc28B',
@@ -734,7 +734,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     permit2: '0xB952578f3520EE8Ea45b7914994dcf4702cEe578',
   },
   //goat
-  [2345]: {
+  2345: {
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
         address: '0x738fD6d10bCc05c230388B4027CAd37f82fe2AF2',
@@ -749,7 +749,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     permit2: '0xB952578f3520EE8Ea45b7914994dcf4702cEe578',
   },
   //redbelly
-  [151]: {
+  151: {
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
         address: '0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc',
@@ -764,7 +764,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     permit2: '0xdD489C75be1039ec7d843A6aC2Fd658350B067Cf',
   },
   //saga
-  [5464]: {
+  5464: {
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
         address: '0xa683c66045ad16abb1bCE5ad46A64d95f9A25785',
@@ -779,7 +779,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     permit2: '0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8',
   },
   //lightlink
-  [1890]: {
+  1890: {
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
         address: '0x738fD6d10bCc05c230388B4027CAd37f82fe2AF2',
@@ -794,7 +794,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     permit2: '0x807F4E281B7A3B324825C64ca53c69F0b418dE40',
   },
   //nibiru
-  [6900]: {
+  6900: {
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
         address: '0xA7E6cB0A6B1BE8b779022A6aFcb097cF0d3Ff4A2',
@@ -809,7 +809,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     permit2: '0xB952578f3520EE8Ea45b7914994dcf4702cEe578',
   },
   // Matchain
-  [698]: {
+  698: {
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
         address: '0x9db70E29712Cc8Af10c2B597BaDA6784544FF407',
@@ -824,7 +824,7 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     permit2: '0xB952578f3520EE8Ea45b7914994dcf4702cEe578',
   },
   // plasma
-  [9745]: {
+  9745: {
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
         address: '0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc',
@@ -836,6 +836,19 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
       },
     },
     weth: '0x6100E367285b01F48D07953803A2d8dCA5D19873',
+  },
+  16661: {
+    routerConfigs: {
+      [UniversalRouterVersion.V1_2]: {
+        address: '0x1b35fbA9357fD9bda7ed0429C8BbAbe1e8CC88fc',
+        creationBlock: 6446981,
+      },
+      [UniversalRouterVersion.V2_0]: {
+        address: ZERO_ADDRESS,
+        creationBlock: 0,
+      },
+    },
+    weth: '0x1cd0690ff9a693f5ef2dd976660a8dafc81a109c',
   },
 }
 
