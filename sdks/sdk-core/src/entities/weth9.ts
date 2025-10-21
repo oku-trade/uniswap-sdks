@@ -128,4 +128,7 @@ export const WETH9: { [chainId: number]: Token } = {
 
   // 0g
   16661: new Token(16661, '0x1cd0690ff9a693f5ef2dd976660a8dafc81a109c', 18, 'W0G', 'Wrapped 0G'),
+
+  // ronin
+  2020: new Token(2020, '0xe514d9deb7966c8be0ca922de8a064264ea6bcd4', 18, 'WRON', 'Wrapped RON'),
 }

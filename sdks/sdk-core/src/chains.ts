@@ -59,6 +59,7 @@ export enum ChainId {
   MATCHAIN = 698,
   PLASMA = 9745,
   ZEROG = 16661,
+  RONIN = 2020,
 }
 
 export const SUPPORTED_CHAINS = [
@@ -122,6 +123,7 @@ export const SUPPORTED_CHAINS = [
   ChainId.MATCHAIN,
   ChainId.PLASMA,
   ChainId.ZEROG,
+  ChainId.RONIN,
 ] as const
 export type SupportedChainsType = (typeof SUPPORTED_CHAINS)[number]
 
@@ -153,4 +155,5 @@ export enum NativeCurrencyName {
   MATCHAIN = 'BNB',
   PLASMA = 'XPL',
   ZEROG = '0G',
+  RONIN = 'RON',
 }
