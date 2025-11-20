@@ -131,4 +131,7 @@ export const WETH9: { [chainId: number]: Token } = {
 
   // ronin
   2020: new Token(2020, '0xe514d9deb7966c8be0ca922de8a064264ea6bcd4', 18, 'WRON', 'Wrapped RON'),
+
+  // monad
+  143: new Token(143, '0x3bd359C1119dA7Da1D913D1C4D2B7c461115433A', 18, 'WMON', 'Wrapped Monad'),
 }

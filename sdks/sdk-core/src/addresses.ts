@@ -61,6 +61,7 @@ export const V2_FACTORY_ADDRESSES: AddressMap = {
   [ChainId.UNICHAIN]: '0x1f98400000000000000000000000000000000002',
   [ChainId.MONAD_TESTNET]: '0x733e88f248b742db6c14c0b1713af5ad7fdd59d0',
   [ChainId.SONEIUM]: '0x97febbc2adbd5644ba22736e962564b23f5828ce',
+  [ChainId.MONAD]: '0x182a927119d56008d921126764bf884221b10f59',
 }
 /**
  * @deprecated use V2_ROUTER_ADDRESSES instead
@@ -83,6 +84,7 @@ export const V2_ROUTER_ADDRESSES: AddressMap = {
   [ChainId.UNICHAIN]: '0x284f11109359a7e1306c3e447ef14d38400063ff',
   [ChainId.MONAD_TESTNET]: '0xfb8e1c3b833f9e67a71c859a132cf783b645e436',
   [ChainId.SONEIUM]: '0x273f68c234fa55b550b40e563c4a488e0d334320',
+  [ChainId.MONAD]: '0x4b2ab38dbf28d31d467aa8993f6c2585981d6804',
 }
 
 // Networks that share most of the same addresses i.e. Mainnet, Goerli, Optimism, Arbitrum, Polygon
@@ -746,6 +748,21 @@ const ZEROG_ADDRESSES: ChainAddresses = {
   swapRouter02Address: '0x807F4E281B7A3B324825C64ca53c69F0b418dE40',
 }
 
+const MONAD_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0x204faca1764b154221e35c0d20abb3c525710498',
+  multicallAddress: '0xd1b797d92d87b688193a2b976efc8d577d204343',
+  quoterAddress: '0x2d01411773c8c24805306e89a41f7855c3c4fe65',
+  v3MigratorAddress: '0x7078c4537c04c2b2e52ddba06074dbdacf23ca15',
+  nonfungiblePositionManagerAddress: '0x7197e214c0b767cfb76fb734ab638e2c192f4e53',
+  tickLensAddress: '0xf025e0fe9e331a0ef05c2ad3c4e9c64b625cda6f',
+  swapRouter02Address: '0xfe31f71c1b106eac32f1a19239c9a9a72ddfb900',
+  // v4
+  v4PoolManagerAddress: '0x188d586ddcf52439676ca21a244753fa19f9ea8e',
+  v4PositionManagerAddress: '0x5b7ec4a94ff9bedb700fb82ab09d5846972f4016',
+  v4StateView: '0x77395f3b2e73ae90843717371294fa97cc419d64',
+  v4QuoterAddress: '0xa222dd357a9076d1091ed6aa2e16c9742dd26891',
+}
+
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
   [ChainId.MAINNET]: MAINNET_ADDRESSES,
   [ChainId.OPTIMISM]: OPTIMISM_ADDRESSES,
@@ -808,6 +825,7 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.PLASMA]: PLASMA_ADDRESSES,
   [ChainId.RONIN]: RONIN_ADDRESSES,
   [ChainId.ZEROG]: ZEROG_ADDRESSES,
+  [ChainId.MONAD]: MONAD_ADDRESSES,
 }
 
 /* V3 Contract Addresses */
