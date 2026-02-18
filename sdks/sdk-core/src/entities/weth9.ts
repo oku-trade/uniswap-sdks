@@ -134,4 +134,7 @@ export const WETH9: { [chainId: number]: Token } = {
 
   // monad
   143: new Token(143, '0x3bd359C1119dA7Da1D913D1C4D2B7c461115433A', 18, 'WMON', 'Wrapped Monad'),
+
+  // gensyn
+  685689: new Token(685689, '0x4200000000000000000000000000000000000006', 18, 'WETH', 'Wrapped Ether'),
 }

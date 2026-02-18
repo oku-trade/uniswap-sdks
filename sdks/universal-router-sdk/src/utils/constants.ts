@@ -865,6 +865,20 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     },
     weth: '0xe514d9deb7966c8be0ca922de8a064264ea6bcd4',
   },
+  // gensyn
+  685689: {
+    routerConfigs: {
+      [UniversalRouterVersion.V1_2]: {
+        address: '0x447B8E40B0CdA8e55F405C86bC635D02d0540aB8',
+        creationBlock: 6185553,
+      },
+      [UniversalRouterVersion.V2_0]: {
+        address: ZERO_ADDRESS,
+        creationBlock: 0,
+      },
+    },
+    weth: '0x4200000000000000000000000000000000000006',
+  },
   16661: {
     routerConfigs: {
       [UniversalRouterVersion.V1_2]: {
