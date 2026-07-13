@@ -98,7 +98,7 @@ try {
   for (const dir of PUBLISH_ORDER) {
     const pkg = JSON.parse(fs.readFileSync(path.join(rootDir, dir, 'package.json'), 'utf8'))
     console.log(`Publishing ${pkg.name}@${pkg.version}...`)
-    run(`npm publish --access public --provenance=false${dryRun ? ' --dry-run' : ''}`, {
+    run(`npm publish --access public --tag latest --provenance=false${dryRun ? ' --dry-run' : ''}`, {
       cwd: path.join(rootDir, dir),
     })
   }
