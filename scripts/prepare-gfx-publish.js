@@ -43,6 +43,9 @@ for (const [name, dir] of Object.entries(PACKAGE_DIRS)) {
   pkg.name = RENAMES[name]
   pkg.version = `${pkg.version}-${suffix}`
   gfxVersions[name] = pkg.version
+  if (pkg.publishConfig && pkg.publishConfig.provenance) {
+    delete pkg.publishConfig.provenance
+  }
   fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 2) + '\n')
   console.log(`${name} -> ${pkg.name}@${pkg.version}`)
 }
