@@ -13,6 +13,8 @@ export {
   WETH_ADDRESS,
   UniversalRouterVersion,
   isAtLeastV2_1_1,
+  PERMIT2_ADDRESS,
+  RESOLVE_PERMIT2_ADDRESS,
 } from './utils/constants'
 export { CommandParser, GenericCommandParser } from './utils/commandParser'
 export type { UniversalRouterCommand, UniversalRouterCall, Param, CommandsDefinition } from './utils/commandParser'
