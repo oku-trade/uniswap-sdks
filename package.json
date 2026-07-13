@@ -29,7 +29,8 @@
     "changeset": "changeset",
     "version-packages": "changeset version",
     "sdk": "bun run --filter",
-    "postinstall": "husky"
+    "postinstall": "husky",
+    "release:gfx": "node scripts/release-gfx.js"
   },
   "workspaces": [
     "sdks/*",
