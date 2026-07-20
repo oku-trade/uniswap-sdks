@@ -337,7 +337,7 @@ const ZORA_SEPOLIA_ADDRESSES: ChainAddresses = {
 
 const ROOTSTOCK_ADDRESSES: ChainAddresses = {
   v3CoreFactoryAddress: '0xaF37EC98A00FD63689CF3060BF3B6784E00caD82',
-  multicallAddress: '0x996a9858cDfa45Ad68E47c9A30a7201E29c6a386',
+  multicallAddress: '0x8CF119F15575CAb4beb427Fb485087e71a96Fbaa',
   quoterAddress: '0xb51727c996C68E60F598A923a5006853cd2fEB31',
   v3MigratorAddress: '0x16678977CA4ec3DAD5efc7b15780295FE5f56162',
   nonfungiblePositionManagerAddress: '0x9d9386c042F194B460Ec424a1e57ACDE25f5C4b1',
