@@ -1,4 +1,4 @@
-import { SWAP_ROUTER_02_ADDRESSES } from './addresses'
+import { CHAIN_TO_ADDRESSES_MAP, SWAP_ROUTER_02_ADDRESSES } from './addresses'
 import { ChainId } from './chains'
 
 describe('addresses', () => {
@@ -76,6 +76,26 @@ describe('addresses', () => {
     it('should return the correct address for ink', () => {
       const address = SWAP_ROUTER_02_ADDRESSES(ChainId.INK)
       expect(address).toEqual('0x177778f19e89dd1012bdbe603f144088a95c4b53')
+    })
+
+    it('should return the correct address for hyperevm', () => {
+      const address = SWAP_ROUTER_02_ADDRESSES(ChainId.HYPEREVM)
+      expect(address).toEqual('0x7AdF4701AbCDBc5Dcf5Cb58B526f897e048F0D11')
+    })
+  })
+
+  describe('hyperevm chain addresses', () => {
+    it('registers the canonical Uniswap v3 HyperEVM deployment', () => {
+      expect(ChainId.HYPEREVM).toEqual(999)
+      expect(CHAIN_TO_ADDRESSES_MAP[ChainId.HYPEREVM].v3CoreFactoryAddress).toEqual(
+        '0xf0db7b58379503491d857dB50AC9ece64c653918',
+      )
+      expect(CHAIN_TO_ADDRESSES_MAP[ChainId.HYPEREVM].multicallAddress).toEqual(
+        '0x33e885eD0Ec9bF04EcfB19341582aADCb4c8A9E7',
+      )
+      expect(CHAIN_TO_ADDRESSES_MAP[ChainId.HYPEREVM].quoterAddress).toEqual(
+        '0x7DfD4F31be6814D2906BDE155c3e1B146EAc1468',
+      )
     })
   })
 })
