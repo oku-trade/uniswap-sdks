@@ -137,4 +137,6 @@ export const WETH9: { [chainId: number]: Token } = {
 
   // gensyn
   685689: new Token(685689, '0x4200000000000000000000000000000000000006', 18, 'WETH', 'Wrapped Ether'),
+  // hyperevm
+  999: new Token(999, '0x5555555555555555555555555555555555555555', 18, 'WHYPE', 'Wrapped HYPE'),
 }

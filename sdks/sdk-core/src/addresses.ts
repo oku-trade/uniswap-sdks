@@ -621,6 +621,19 @@ const BOB_ADDRESSES: ChainAddresses = {
   swapRouter02Address: '0x807F4E281B7A3B324825C64ca53c69F0b418dE40',
 }
 
+// https://developers.uniswap.org/docs/protocols/v3/deployments/v3-hyperevm-deployments
+// (all verified on-chain via eth_getCode on 2026-10-02)
+const HYPEREVM_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0xf0db7b58379503491d857dB50AC9ece64c653918',
+  multicallAddress: '0x33e885eD0Ec9bF04EcfB19341582aADCb4c8A9E7',
+  quoterAddress: '0x7DfD4F31be6814D2906BDE155c3e1B146EAc1468',
+  v3MigratorAddress: '0x384461c47446324EC0D861aD902fc3935c969B5c',
+  nonfungiblePositionManagerAddress: '0x39654A85A4C05127f5Fd6ED22CAeC077A0fB1377',
+  tickLensAddress: '0x9EB8600665b55d10C1eB2316Ca5127A9cA6E2E76',
+  swapRouter02Address: '0x7AdF4701AbCDBc5Dcf5Cb58B526f897e048F0D11',
+  mixedRouteQuoterV2Address: '0xD6A1239f7d0A47420349a80a4406EAa7a1283576',
+}
+
 const LISK_ADDRESSES: ChainAddresses = {
   v3CoreFactoryAddress: '0x0d922Fb1Bc191F64970ac40376643808b4B74Df9',
   multicallAddress: '0xE3dbcD53f4Ce1b06Ab200f4912BD35672e68f1FA',
@@ -950,6 +963,7 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.RONIN]: RONIN_ADDRESSES,
   [ChainId.ZEROG]: ZEROG_ADDRESSES,
   [ChainId.GENSYN]: GENSYN_ADDRESSES,
+  [ChainId.HYPEREVM]: HYPEREVM_ADDRESSES,
 }
 
 /* V3 Contract Addresses */

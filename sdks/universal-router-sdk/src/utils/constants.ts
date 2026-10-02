@@ -934,6 +934,23 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
       },
     },
   },
+  // hyperevm
+  // https://developers.uniswap.org/docs/protocols/v3/deployments/v3-hyperevm-deployments
+  // creation blocks found on-chain via eth_getCode bisection (2026-10-02)
+  [999]: {
+    weth: '0x5555555555555555555555555555555555555555',
+    routerConfigs: {
+      [UniversalRouterVersion.V1_2]: {
+        address: '0x9aFe3C497e19501DB228F28CdBdD29bC98F65DBa',
+        creationBlock: 46267742,
+      },
+      // UniversalRouter 2.1.2 (v2.1.x line; same command set as V2_1_1)
+      [UniversalRouterVersion.V2_1_1]: {
+        address: '0xeD270A1Bcdc63cf1356D695e7f40961d4819d6bF',
+        creationBlock: 46178804,
+      },
+    },
+  },
   // 0g
   [16661]: {
     weth: '0x1cd0690ff9a693f5ef2dd976660a8dafc81a109c',
