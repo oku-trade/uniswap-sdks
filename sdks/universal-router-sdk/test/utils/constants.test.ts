@@ -60,6 +60,24 @@ describe('Universal Router Constants', () => {
       })
     })
 
+    // Matches Uniswap/universal-router deploy-addresses/hyperevm.json and
+    // Uniswap/contracts deployments/json/999.json ("UniversalRouter#v2.1.2", "#v2.2").
+    it('should return the upstream HyperEVM (999) routers and SwapProxy', () => {
+      expect(UNIVERSAL_ROUTER_ADDRESS(UniversalRouterVersion.V2_1_1, 999).toLowerCase()).to.equal(
+        '0xed270a1bcdc63cf1356d695e7f40961d4819d6bf'
+      )
+      expect(UNIVERSAL_ROUTER_ADDRESS(UniversalRouterVersion.V2_2_0, 999).toLowerCase()).to.equal(
+        '0xe783de89a7f0408687f051e3e6d0beb62719ebad'
+      )
+      expect(UNIVERSAL_ROUTER_CREATION_BLOCK(UniversalRouterVersion.V2_1_1, 999)).to.equal(46178804)
+      expect(UNIVERSAL_ROUTER_CREATION_BLOCK(UniversalRouterVersion.V2_2_0, 999)).to.equal(46781406)
+      expect(() => UNIVERSAL_ROUTER_ADDRESS(UniversalRouterVersion.V1_2, 999)).to.throw(
+        'Universal Router version 1.2 not deployed on chain 999'
+      )
+      expect(WETH_ADDRESS(999).toLowerCase()).to.equal('0x5555555555555555555555555555555555555555')
+      expect(SWAP_PROXY_ADDRESS(999).toLowerCase()).to.equal('0x0000000085e102724e78ecd2f45dc9ca239affad')
+    })
+
     it('should return the correct V2_1_1 address for arc and robinhood', () => {
       expect(UNIVERSAL_ROUTER_ADDRESS(UniversalRouterVersion.V2_1_1, 5042)).to.equal(
         '0x4fca4a51ab4f23a7447b3284fbd7d73289a89fb1'

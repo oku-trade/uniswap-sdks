@@ -70,6 +70,7 @@ export const V2_FACTORY_ADDRESSES: AddressMap = {
   [ChainId.ARC]: '0x89e5db8b5aa49aa85ac63f691524311aeb649eba',
   [ChainId.ROBINHOOD]: '0x8bceaa40b9acdfaedf85adf4ff01f5ad6517937f',
   [ChainId.INK]: '0xfe57a6ba1951f69ae2ed4abe23e0f095df500c04',
+  [ChainId.HYPEREVM]: '0x89e5db8b5aa49aa85ac63f691524311aeb649eba',
 }
 /**
  * @deprecated use V2_ROUTER_ADDRESSES instead
@@ -99,6 +100,7 @@ export const V2_ROUTER_ADDRESSES: AddressMap = {
   [ChainId.MEGAETH]: '0xb73055db2b3a3eae87a331dd88e4a80b43602690',
   [ChainId.ARC]: '0x1f7d7550b1b028f7571e69a784071f0205fd2efa',
   [ChainId.ROBINHOOD]: '0x89e5db8b5aa49aa85ac63f691524311aeb649eba',
+  [ChainId.HYPEREVM]: '0x1f7d7550b1b028f7571e69a784071f0205fd2efa',
 }
 
 // Networks that share most of the same addresses i.e. Mainnet, Goerli, Optimism, Arbitrum, Polygon
@@ -621,8 +623,9 @@ const BOB_ADDRESSES: ChainAddresses = {
   swapRouter02Address: '0x807F4E281B7A3B324825C64ca53c69F0b418dE40',
 }
 
-// https://developers.uniswap.org/docs/protocols/v3/deployments/v3-hyperevm-deployments
-// (all verified on-chain via eth_getCode on 2026-10-02)
+// Source of truth: Uniswap/contracts deployments/json/999.json ("latest"); every
+// address cross-checked against developers.uniswap.org and verified on-chain via
+// eth_getCode (2026-10-02).
 const HYPEREVM_ADDRESSES: ChainAddresses = {
   v3CoreFactoryAddress: '0xf0db7b58379503491d857dB50AC9ece64c653918',
   multicallAddress: '0x33e885eD0Ec9bF04EcfB19341582aADCb4c8A9E7',
@@ -632,6 +635,12 @@ const HYPEREVM_ADDRESSES: ChainAddresses = {
   tickLensAddress: '0x9EB8600665b55d10C1eB2316Ca5127A9cA6E2E76',
   swapRouter02Address: '0x7AdF4701AbCDBc5Dcf5Cb58B526f897e048F0D11',
   mixedRouteQuoterV2Address: '0xD6A1239f7d0A47420349a80a4406EAa7a1283576',
+
+  v4PoolManagerAddress: '0x12d4fd9c5dedd00ab8a0bce2cf0167bbf94b6b1f',
+  v4PositionManagerAddress: '0x0d7ab5b3db668128aff6f70c4ebc71d7d4da9bf9',
+  v4StateView: '0x1656326235cb9e34cb58cade53ae30789ab32a1a',
+  v4QuoterAddress: '0x108bfe38532c98f8cd8d7ab49c9ddaa3675a1c5e',
+  permissionedV4PositionManagerAddress: '0xbbbcc62853a5fa27b93d6bab3e6f7ce841e25df2',
 }
 
 const LISK_ADDRESSES: ChainAddresses = {
