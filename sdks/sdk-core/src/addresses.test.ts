@@ -28,6 +28,16 @@ describe('addresses', () => {
       expect(address).toEqual('0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45')
     })
 
+    it('should return the correct address for celo', () => {
+      const address = SWAP_ROUTER_02_ADDRESSES(ChainId.CELO)
+      expect(address).toEqual('0x5615CDAb10dc425a742d643d949a7F474C01abc4')
+    })
+
+    it('should return the correct address for celo alfajores', () => {
+      const address = SWAP_ROUTER_02_ADDRESSES(ChainId.CELO_ALFAJORES)
+      expect(address).toEqual('0x8C456F41A3883bA0ba99f810F7A2Da54D9Ea3EF0')
+    })
+
     it('should return the correct address for optimism sepolia', () => {
       const address = SWAP_ROUTER_02_ADDRESSES(ChainId.OPTIMISM_SEPOLIA)
       expect(address).toEqual('0x94cC0AaC535CCDB3C01d6787D6413C739ae12bc4')
