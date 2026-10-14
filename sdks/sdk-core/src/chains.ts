@@ -68,6 +68,7 @@ export enum ChainId {
   ZEROG = 16661,
   RONIN = 2020,
   GENSYN = 685689,
+  HYPEREVM = 999,
 }
 
 /**
@@ -99,6 +100,7 @@ export const AVERAGE_BLOCK_TIMES_SECONDS: { [chainId: number]: number } = {
   [ChainId.ARC]: 0.48,
   [ChainId.ROBINHOOD]: 0.1,
   [ChainId.INK]: 1,
+  [ChainId.HYPEREVM]: 1,
 }
 
 /**
@@ -193,6 +195,7 @@ export const SUPPORTED_CHAINS = [
   ChainId.ZEROG,
   ChainId.RONIN,
   ChainId.GENSYN,
+  ChainId.HYPEREVM,
 ] as const
 export type SupportedChainsType = (typeof SUPPORTED_CHAINS)[number]
 
@@ -226,4 +229,5 @@ export enum NativeCurrencyName {
   ZEROG = '0G',
   RONIN = 'RON',
   MONAD = 'MON',
+  HYPEREVM = 'HYPE',
 }

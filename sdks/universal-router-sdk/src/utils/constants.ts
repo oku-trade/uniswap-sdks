@@ -934,6 +934,31 @@ export const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
       },
     },
   },
+  // hyperevm
+  // Addresses from Uniswap/universal-router deploy-addresses/hyperevm.json and
+  // Uniswap/contracts deployments/json/999.json; creation blocks found on-chain
+  // via eth_getCode bisection (2026-10-02).
+  [999]: {
+    weth: '0x5555555555555555555555555555555555555555',
+    routerConfigs: {
+      // No v1.2 / v2.0 router is deployed on HyperEVM.
+      // UniversalRouter v2.1.2: this fork has no V2_1_2 member; v2.1.2 encodes like
+      // v2.1.1 (upstream isAtLeastV2_1_1 is true for it), so it lives under V2_1_1.
+      [UniversalRouterVersion.V2_1_1]: {
+        address: '0xeD270A1Bcdc63cf1356D695e7f40961d4819d6bF',
+        creationBlock: 46178804,
+      },
+      // UniversalRouter v2.2.0 (Uniswap/contracts "UniversalRouter#v2.2", the latest).
+      // 0x9aFe3C49... (block 46267742) is an earlier v2.2.0 deployment that
+      // Uniswap/contracts has since moved to history.
+      [UniversalRouterVersion.V2_2_0]: {
+        address: '0xe783de89a7f0408687f051e3e6d0beb62719ebad',
+        creationBlock: 46781406,
+      },
+    },
+    // SwapProxy on HyperEVM is not at the deterministic SWAP_PROXY_DEPLOY_ADDRESS
+    swapProxy: '0x0000000085E102724e78eCd2F45DC9cA239Affad',
+  },
   // 0g
   [16661]: {
     weth: '0x1cd0690ff9a693f5ef2dd976660a8dafc81a109c',
