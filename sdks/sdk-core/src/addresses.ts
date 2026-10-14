@@ -160,6 +160,8 @@ const CELO_ADDRESSES: ChainAddresses = {
   v3MigratorAddress: '0x3cFd4d48EDfDCC53D3f173F596f621064614C582',
   nonfungiblePositionManagerAddress: '0x3d79EdAaBC0EaB6F08ED885C05Fc0B014290D95A',
   tickLensAddress: '0x5f115D9113F88e0a0Db1b5033D90D4a9690AcD3D',
+  // The default 0x68b3...Fc45 is an unrelated contract on Celo, not SwapRouter02.
+  swapRouter02Address: '0x5615CDAb10dc425a742d643d949a7F474C01abc4',
 
   v4PoolManagerAddress: '0x288dc841A52FCA2707c6947B3A777c5E56cd87BC',
   v4PositionManagerAddress: '0xf7965f3981e4d5bc383bfbcb61501763e9068ca9',
